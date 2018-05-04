@@ -245,7 +245,7 @@
   margin: auto; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .Device__image {
-      background: url(ef5d9ab14bcd9fdbe68f6f7d765dc007.png) no-repeat center center;
+      background: url(6f067551276eb99348fcb0e48b4374fe.png) no-repeat center center;
       background-size: contain; } }
 
 @media only screen and (max-width: 768px) {
@@ -287,8 +287,8 @@
       background-size: contain; }
     .Store__item--android {
       width: 170px;
-      background: url(5b5de0ba59eef60db5aeeb131e5648c4.svg) no-repeat center center;
-      background-size: contain;
+      background: url(49fd6a54a2e359571c596ce3935f63d3.svg) no-repeat center center;
+      background-size: cover;
       cursor: initial; }
       .Store__item--android:hover {
         opacity: 1 !important; }
@@ -440,10 +440,12 @@
     line-height: 17px;
     text-align: center; }
 
+html, body {
+  height: 100%; }
+
 body {
   margin: 0;
   padding: 0;
-  background: #000;
   color: #FFFFFF;
   direction: ltr;
   font-size: 14px;
@@ -452,20 +454,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
   font-family: Anonymous Pro, Helvetica Neue, sans-serif;
-  background-size: cover;
-  background: url(e769d1670f1abde862b141958f803e45.jpg) no-repeat fixed center bottom; }
+  background-size: cover !important;
+  background: #FFF url(ecd076a568d7ae60a395232e15004e49.jpg) no-repeat fixed center bottom; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     body {
-      background: url(7b33c7e6db1fe0522eb8a4a0d7efc655.jpg) no-repeat fixed center bottom;
-      background-size: cover; } }
+      background: #FFF url(7b33c7e6db1fe0522eb8a4a0d7efc655.jpg) no-repeat fixed center bottom;
+      background-size: cover !important; } }
   @media only screen and (max-width: 768px) {
     body {
       background-size: cover;
-      background: url(26874eeee1b8d4f669eb104a6b59c0e6.jpg) no-repeat fixed center bottom; } }
+      background: url(419c8c84239ab1fb5e12fa76d6973b7d.jpg) no-repeat fixed center bottom; } }
   @media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi) {
     body {
-      background: url(419c8c84239ab1fb5e12fa76d6973b7d.jpg) no-repeat fixed center bottom;
+      background: url(26874eeee1b8d4f669eb104a6b59c0e6.jpg) no-repeat fixed center bottom;
       background-size: cover; } }
+
+.App {
+  display: table-row;
+  height: 100%;
+  width: 100%; }
+
+.Wrapper {
+  display: table;
+  height: 100%;
+  width: 100%; }
 
 a {
   outline: 0;
