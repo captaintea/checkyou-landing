@@ -78,7 +78,8 @@
     .Content {
       display: block; }
       .Content__left {
-        padding: 0 20px; }
+        padding: 0 20px;
+        width: initial; }
       .Content__right {
         position: relative;
         padding: 0 40px 0 20px; } }
@@ -492,19 +493,27 @@ body {
   -webkit-tap-highlight-color: transparent;
   font-family: Anonymous Pro, Helvetica Neue, sans-serif;
   background-size: cover !important;
-  background: #FFF url(ecd076a568d7ae60a395232e15004e49.jpg) no-repeat fixed center bottom; }
+  background: #FFF url(f37b8f928139617284741bcc73ca48a0.jpg) no-repeat fixed center bottom; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     body {
       background: #FFF url(ecd076a568d7ae60a395232e15004e49.jpg) no-repeat fixed center bottom;
       background-size: cover !important; } }
   @media only screen and (max-width: 768px) {
     body {
-      background-size: cover;
-      background: url(419c8c84239ab1fb5e12fa76d6973b7d.jpg) no-repeat fixed center bottom; } }
+      background-size: cover !important;
+      background: url(26874eeee1b8d4f669eb104a6b59c0e6.jpg) no-repeat fixed center bottom; } }
   @media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi) {
     body {
-      background: url(26874eeee1b8d4f669eb104a6b59c0e6.jpg) no-repeat fixed center bottom;
-      background-size: cover; } }
+      background: url(419c8c84239ab1fb5e12fa76d6973b7d.jpg) no-repeat fixed center bottom;
+      background-size: cover !important; } }
+  @media only screen and (max-width: 375px) {
+    body {
+      background-size: cover !important;
+      background: url(773c8162827514ce58b3d66c4c18cedf.jpg) no-repeat fixed center bottom; } }
+  @media only screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 375px) and (min-resolution: 192dpi) {
+    body {
+      background: url(45aae2d31915e9b4f3521e4a91fea19c.jpg) no-repeat fixed center bottom;
+      background-size: cover !important; } }
 
 .App {
   display: table-row;
