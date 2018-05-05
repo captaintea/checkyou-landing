@@ -349,9 +349,10 @@
     text-decoration: none; }
   @media only screen and (max-width: 768px) {
     .Footer {
+      height: 100%;
       padding: 20px; }
       .Footer__left {
-        margin-bottom: 18px;
+        padding-bottom: 18px;
         padding-right: 40px; }
       .Footer__corporation {
         padding-right: 20px; } }
