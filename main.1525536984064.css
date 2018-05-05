@@ -334,7 +334,8 @@
     float: left; }
     .Footer__left a {
       box-shadow: 0 3px 0 0 #F8E71C;
-      padding-bottom: 2px; }
+      padding-bottom: 2px;
+      display: inline-block; }
       .Footer__left a:hover {
         box-shadow: none; }
     .Footer__left a + a {
