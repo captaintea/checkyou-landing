@@ -62,15 +62,16 @@
   .Content__left {
     padding-top: 20px;
     width: 100%;
-    box-sizing: border-box;
-    padding-right: 60px; }
+    padding-right: 80px;
+    min-width: 470px; }
   .Content__right {
     width: 100%;
     box-sizing: border-box;
-    padding-left: 60px; }
+    padding-left: 80px; }
   @media only screen and (max-width: 1024px) {
     .Content__left {
-      padding-right: 0; }
+      padding-right: 0;
+      min-width: initial; }
     .Content__right {
       padding-left: 0; } }
   @media only screen and (max-width: 768px) {
@@ -278,7 +279,7 @@
         background-size: cover; } }
 
 .Store {
-  padding-bottom: 89px; }
+  padding-bottom: 20px; }
   .Store a {
     text-decoration: none; }
   .Store--small {
