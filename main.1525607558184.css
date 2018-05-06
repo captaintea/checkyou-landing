@@ -187,13 +187,9 @@
     user-select: none;
     width: 50px;
     -webkit-touch-callout: none;
-    /* iOS Safari */
     -webkit-user-select: none;
-    /* Safari */
     -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */ }
+    -ms-user-select: none; }
   .Phone input {
     padding: 14px 15px 12px;
     font-family: Anonymous Pro, Helvetica Neue, sans-serif;
@@ -265,8 +261,6 @@
     position: relative;
     margin-bottom: 20px; }
     .Device__image {
-      /*width: 180px;
-      height: 200px;*/
       width: 100%;
       height: initial;
       min-height: 100%;
@@ -312,10 +306,6 @@
       padding-bottom: 23.67%;
       position: relative;
       box-sizing: border-box;
-      /*&--small > &__item--ios {
-      width: 180px;
-      height: 60px;
-    }*/
       display: none; }
       .Store__item {
         width: 100%;
@@ -418,8 +408,16 @@
     height: initial;
     overflow: auto;
     max-height: 80vh; }
-  .Popup.hidden {
-    display: none; }
+  .Popup__error {
+    font-size: 14px;
+    color: #FF4FB5;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: center; }
+  .Popup--error .Popup__body {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .Popup__window {
     position: relative;
     padding: 0 25px; }
@@ -475,6 +473,37 @@
     .Popup--policy .Popup__body {
       max-width: 500px;
       width: initial; } }
+
+.Wait {
+  height: 12.5px;
+  line-height: 10.5px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 8px; }
+
+@keyframes dot-animation {
+  0% {
+    opacity: 0.2; }
+  30% {
+    opacity: 1; }
+  to {
+    opacity: 0.2; } }
+  .Wait .dot {
+    transform: translateZ(0);
+    animation-duration: 750ms;
+    animation-iteration-count: infinite;
+    animation-name: dot-animation;
+    background: #000000;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    margin: 0; }
+  .Wait .dot1 {
+    animation-delay: 0ms; }
+  .Wait .dot2 {
+    animation-delay: 180ms; }
+  .Wait .dot3 {
+    animation-delay: 360ms; }
 
 html, body {
   height: 100%;
@@ -532,3 +561,18 @@ a {
   font-weight: 700;
   color: #FFFFFF;
   text-decoration: none; }
+
+#phone + div {
+  display: none; }
+
+.hidden {
+  display: none; }
+
+script + div {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 100% !important; }
+  script + div div + div {
+    position: initial !important;
+    margin: 0 !important; }
