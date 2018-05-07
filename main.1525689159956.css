@@ -301,12 +301,15 @@
   @media only screen and (max-width: 768px) {
     .Store {
       margin-bottom: 32px;
-      width: 69.25%;
-      height: 0;
-      padding-bottom: 23.67%;
       position: relative;
       box-sizing: border-box;
+      width: 69.25%;
+      height: 0;
       display: none; }
+      .Store--ios {
+        padding-bottom: 23.67%; }
+      .Store--android {
+        padding-bottom: 20.6%; }
       .Store__item {
         width: 100%;
         position: absolute;
@@ -351,23 +354,19 @@
   @media only screen and (max-width: 768px) {
     .Footer {
       height: 100%;
-      padding: 20px; }
-      .Footer__left {
-        padding-bottom: 18px;
-        padding-right: 40px; }
-      .Footer__corporation {
-        padding-right: 20px;
-        padding-bottom: 15px; } }
-  @media only screen and (max-width: 730px) {
-    .Footer {
       padding: 0 20px; }
       .Footer__left {
+        padding-bottom: 18px;
+        padding-right: 40px;
         float: none;
         line-height: 22px; }
       .Footer__right {
         float: none;
         padding-bottom: 20px;
-        line-height: 17px; } }
+        line-height: 17px; }
+      .Footer__corporation {
+        padding-right: 20px;
+        padding-bottom: 15px; } }
   .Footer__links {
     display: inline-block; }
 
@@ -435,7 +434,8 @@
     height: 157px;
     box-sizing: border-box;
     background: #000000;
-    border: 2px solid #F6F500; }
+    border: 2px solid #F6F500;
+    overflow-x: hidden !important; }
   .Popup__close {
     position: absolute;
     right: 6px;
@@ -473,6 +473,9 @@
     .Popup--policy .Popup__body {
       max-width: 500px;
       width: initial; } }
+  @media only screen and (max-width: 400px) {
+    .Popup__window {
+      max-width: 90%; } }
 
 .Wait {
   height: 12.5px;
@@ -509,6 +512,9 @@ html, body {
   height: 100%;
   min-height: 100%;
   overflow: auto; }
+  @media only screen and (max-width: 768px) {
+    html, body {
+      -webkit-overflow-scrolling: touch; } }
 
 body {
   margin: 0;
@@ -548,6 +554,15 @@ body {
   display: table-row;
   height: 100%;
   width: 100%; }
+  .App__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; }
+  @media only screen and (max-width: 768px) {
+    .App__wrapper {
+      height: initial;
+      display: block; } }
 
 .Wrapper {
   display: table;

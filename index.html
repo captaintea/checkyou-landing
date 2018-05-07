@@ -6,88 +6,94 @@
     <meta name="title" content="CHECK YOU">
     <meta charset="UTF-8">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<link rel="shortcut icon" href="favicon.ico"><link href="main.1525609529818.css" rel="stylesheet"></head>
+<link rel="shortcut icon" href="favicon.ico"><link href="main.1525689159956.css" rel="stylesheet"></head>
 <body>
 <div class="Wrapper">
     <div class="App">
-        <div class="Header">
-            <div class="Header__wrapper">
-                <a href="/">
-                    <div class="Header__logo">
-                    </div>
-                </a>
+        <div class="App__wrapper">
+            <div class="Header">
+                <div class="Header__wrapper">
+                    <a href="/">
+                        <div class="Header__logo">
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="Content">
-            <div class="Content__left">
-                <div class="MainTitle">
-                    <h1 class="MainTitle__text">
-                        МЕСТО, ГДЕ ТЫ МОЖЕШЬ
-                        <br/>
-                        БЫТЬ СОБОЙ
-                    </h1>
-                </div>
-                <div class="Description">
-                    <p>
-                        ВЫКЛАДЫВАЙ СВОЮ НАСТОЯЩУЮ ЖИЗНЬ, ПОЛЬЗУЙСЯ КРУТЫМИ БЕСПЛАТНЫМИ ФИЛЬТРАМИ, КОММЕНТИРУЙ ИСТОРИИ
-                        ДРУЗЕЙ. ГЛАВНОЕ — БУДЬ СОБОЙ.
-                    </p>
-                </div>
-                <form id="form" class="Phone" action="javascript:void(0);" method="POST" enctype="multipart/form-data">
-                    <div class="Phone__title">
-                        <label for="phone">
-                            ДАВАЙ ОТПРАВИМ ТЕБЕ ССЫЛКУ НА ПРИЛОЖЕНИЕ:
-                        </label>
+            <div class="Content">
+                <div class="Content__left">
+                    <div class="MainTitle">
+                        <h1 class="MainTitle__text">
+                            МЕСТО, ГДЕ ТЫ МОЖЕШЬ
+                            <br/>
+                            БЫТЬ СОБОЙ
+                        </h1>
                     </div>
-                    <div class="Phone__content">
+                    <div class="Description">
+                        <p>
+                            ВЫКЛАДЫВАЙ СВОЮ НАСТОЯЩУЮ ЖИЗНЬ, ПОЛЬЗУЙСЯ КРУТЫМИ БЕСПЛАТНЫМИ ФИЛЬТРАМИ, КОММЕНТИРУЙ ИСТОРИИ
+                            ДРУЗЕЙ. ГЛАВНОЕ — БУДЬ СОБОЙ.
+                        </p>
+                    </div>
+                    <form id="form" class="Phone" action="javascript:void(0);" method="POST" enctype="multipart/form-data">
+                        <div class="Phone__title">
+                            <label for="phone">
+                                ДАВАЙ ОТПРАВИМ ТЕБЕ ССЫЛКУ НА ПРИЛОЖЕНИЕ:
+                            </label>
+                        </div>
+                        <div class="Phone__content">
                     <span class="Phone__prefix">
                         +7
                     </span>
-                        <input type="hidden" name="os" value="ios">
-                        <input type="text" id="phone" placeholder="ВВЕДИ СВОЙ НОМЕР" name="phone"/>
-                        <div class="g-recaptcha"
-                             data-sitekey="6LetblcUAAAAAN9mcxMEnZUjWGqCKqTw0vk1zbPk"
-                             data-callback="captchaCallback"
-                             data-expired-callback="captchaExpiredCallback"
-                             data-error-callback="captchaErrorCallback"
-                             data-size="invisible">
-                        </div>
-                        <button id="submit" type="submit">
-                            <span id="textButton">ОТПРАВИТЬ</span>
-                            <span class="Wait hidden" id="wait">
+                            <input type="hidden" name="os" value="ios">
+                            <input type="text" id="phone" placeholder="ВВЕДИ СВОЙ НОМЕР" name="phone"/>
+                            <div class="g-recaptcha"
+                                 data-sitekey="6LetblcUAAAAAN9mcxMEnZUjWGqCKqTw0vk1zbPk"
+                                 data-callback="captchaCallback"
+                                 data-expired-callback="captchaExpiredCallback"
+                                 data-error-callback="captchaErrorCallback"
+                                 data-size="invisible">
+                            </div>
+                            <button id="submit" type="submit">
+                                <span id="textButton">ОТПРАВИТЬ</span>
+                                <span class="Wait hidden" id="wait">
                                 <span class="dot dot1"></span>
                                 <span class="dot dot2"></span>
                                 <span class="dot dot3"></span>
                             </span>
 
-                        </button>
-                    </div>
-                </form>
-                <div class="Store">
-                    <a target="_blank" href="https://google.com">
-                        <div class="Store__item Store__item--ios">
+                            </button>
                         </div>
-                    </a>
-                    <div class="Store__item Store__item--android">
+                    </form>
+                    <div class="Store">
+                        <a target="_blank" href="https://google.com">
+                            <div class="Store__item Store__item--ios">
+                            </div>
+                        </a>
+                        <div class="Store__item Store__item--android">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="Content__right">
-                <div class="Device">
-                    <div class="Device__image">
-                    </div>
-                    <div class="Agitation">
+                <div class="Content__right">
+                    <div class="Device">
+                        <div class="Device__image">
+                        </div>
+                        <div class="Agitation">
                     <span class="Agitation__text">
                         КАЧАЙ БЫСТРЕЕ
                     </span>
-                    </div>
-                </div>
-                <a target="_blank" href="https://google.com">
-                    <div class="Store Store--small">
-                        <div class="Store__item Store__item--ios">
                         </div>
                     </div>
-                </a>
+                    <a target="_blank" href="https://google.com" id="storeMobileIOS">
+                        <div class="Store Store--small Store--ios">
+                            <div class="Store__item Store__item--ios">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="Store Store--small Store--android hidden" id="storeMobileAndroid">
+                        <div class="Store__item Store__item--android">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -154,7 +160,7 @@
                     1. Общие положения
                     1.1. «CheckYou Ltd.» (TIN 10362419F, Diagorou 4, Kermia Building, 6th floor, Flat/Office 601, 1097 Nicosia, Cyprus), именуемое в дальнейшем «Компания» или «Лицензиар», обязуется соблюдать конфиденциальность данных и информации, предоставляемых пользователями (далее – «Лицензиат» или «Пользователь») при использовании программы для ЭВМ приложения «CheckYou» для мобильных устройств на платформе Android и iOS (далее – «Мессенджер»).
                     1.2. Данной Политикой устанавливаются правила, в соответствии с которыми Компания осуществляет сбор и/или обработку данных и информации, которые предоставляет Лицензиат или которые становятся доступны Компании в процессе использования Лицензиатом Мессенджера.
-                    1.3. Условием использования Мессенджера является согласие Лицензиата с настоящей Политикой, размещенной на Сайте Компании по адресу: https://checkyou.io/policy.txt. При каждом доступе и/или фактическом использовании Мессенджера Лицензиат соглашается с условиями настоящей Политики, а также с условиями лицензионного соглашения, доступного по адресу https://checkyou.io/eula.txt (далее – «Соглашение»), в редакциях, которые действовали на момент фактического использования Мессенджера
+                    1.3. Условием использования Мессенджера является согласие Лицензиата с настоящей Политикой, размещенной на Сайте Компании по адресу: https://checkyou.io/docs/eula.html. При каждом доступе и/или фактическом использовании Мессенджера Лицензиат соглашается с условиями настоящей Политики, а также с условиями лицензионного соглашения, доступного по адресу https://checkyou.io/eula.txt (далее – «Соглашение»), в редакциях, которые действовали на момент фактического использования Мессенджера
 
                     Значение некоторых терминов, используемых в настоящей Политике, определяется Соглашением.
                     2. Обрабатываемые Компанией данные и иная информация
@@ -170,7 +176,7 @@
                     3. Применимое право
                     Обработка данных Пользователей осуществляется на основании законодательства РФ.
                     4. Действие настоящей Политики
-                    Компания оставляет за собой право вносить изменения и дополнения в настоящую Политику. Новая редакция Политики вступает в силу с момента её размещения на сайте по адресу: https://checkyou.io/policy.txt. Лицензиат обязуется самостоятельно регулярно знакомиться с новыми редакциями Политики.
+                    Компания оставляет за собой право вносить изменения и дополнения в настоящую Политику. Новая редакция Политики вступает в силу с момента её размещения на сайте по адресу: https://checkyou.io/docs/privacy.html. Лицензиат обязуется самостоятельно регулярно знакомиться с новыми редакциями Политики.
                     5. Обратная связь
                     Лицензиат может сообщить свое мнение о принципах Компании по вопросам соблюдения конфиденциальности, направив письмо по адресу на policy@checkyou.io.
                 </p>
@@ -193,5 +199,5 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="main.1525609529818.js"></script></body>
+<script type="text/javascript" src="main.1525689159956.js"></script></body>
 </html>
