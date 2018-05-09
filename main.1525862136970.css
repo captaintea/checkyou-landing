@@ -290,7 +290,7 @@
       background: url(571cb850f5949dc1c944e30783f9ed04.svg) no-repeat center center;
       background-size: cover; }
       .Store__item--ios:hover {
-        background: url(571cb850f5949dc1c944e30783f9ed04.svg) no-repeat center center;
+        background: url(1681f5f7eaa1cc101eabb5c6a4fef9fb.gif) no-repeat center center;
         background-size: cover; }
     .Store__item--android {
       width: 170px;
@@ -334,6 +334,13 @@
         display: block; }
       .Store--small > .Store__item:hover {
         opacity: 1; } }
+  .Store::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(29c162ac65822d00a46e47e79c3ce860.gif) url(1681f5f7eaa1cc101eabb5c6a4fef9fb.gif); }
 
 .Footer {
   padding: 25px 0;
