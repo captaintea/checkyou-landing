@@ -141,7 +141,7 @@
         font-weight: 700; } }
 
 .Phone {
-  padding-bottom: 20px; }
+  padding-bottom: 30px; }
   .Phone__title {
     padding-bottom: 18px; }
     .Phone__title label {
@@ -276,7 +276,9 @@
 .Store {
   padding-bottom: 20px; }
   .Store a {
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block;
+    height: 50px; }
   .Store--small {
     display: none; }
   .Store__item {
@@ -285,19 +287,21 @@
     cursor: pointer; }
     .Store__item--ios {
       width: 150px;
-      background: url(cd261bcd5bc555e258ebed019ea74796.svg) no-repeat center center;
-      background-size: contain; }
+      background: url(571cb850f5949dc1c944e30783f9ed04.svg) no-repeat center center;
+      background-size: cover; }
+      .Store__item--ios:hover {
+        background: url(571cb850f5949dc1c944e30783f9ed04.svg) no-repeat center center;
+        background-size: cover; }
     .Store__item--android {
       width: 170px;
-      background: url(49fd6a54a2e359571c596ce3935f63d3.svg) no-repeat center center;
+      background: url(09328f5b6cff6d7872a081fb46a4226a.svg) no-repeat center center;
       background-size: cover;
       cursor: initial; }
       .Store__item--android:hover {
-        opacity: 1 !important; }
-    .Store__item:hover {
-      opacity: 0.4; }
-  .Store__item--ios + .Store__item--android {
-    margin-left: 21px; }
+        background: url(29c162ac65822d00a46e47e79c3ce860.gif) no-repeat center center;
+        background-size: cover; }
+  a + .Store__item--android {
+    margin-left: 14px; }
   @media only screen and (max-width: 768px) {
     .Store {
       margin-bottom: 32px;
@@ -307,14 +311,25 @@
       height: 0;
       display: none; }
       .Store--ios {
-        padding-bottom: 23.67%; }
+        padding-bottom: 23%; }
       .Store--android {
-        padding-bottom: 20.6%; }
+        padding-bottom: 20.2%; }
       .Store__item {
         width: 100%;
         position: absolute;
         min-height: 100%;
         height: initial; }
+        .Store__item:hover {
+          cursor: initial; }
+        .Store__item--ios:hover {
+          background: url(571cb850f5949dc1c944e30783f9ed04.svg) no-repeat center center;
+          background-size: cover; }
+        .Store__item--android {
+          background: url(29c162ac65822d00a46e47e79c3ce860.gif) no-repeat center center;
+          background-size: cover; }
+          .Store__item--android:hover {
+            background: url(29c162ac65822d00a46e47e79c3ce860.gif) no-repeat center center;
+            background-size: cover; }
       .Store--small {
         display: block; }
       .Store--small > .Store__item:hover {
